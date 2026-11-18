@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Databáze</title>
+  <link rel="stylesheet" href="web/reset.css">
+  <link rel="stylesheet" href="web/styl.css">
+</head>
+<body>
+  <header>
+    <h1 id="nadpis">Databáze</h1>
+  </header>
+  <select id="prejit" aria-label="Přejít na"></select>
+  <nav id="zalozky" aria-label="Tabulky"></nav>
+  <div id="zprava" role="status" aria-live="polite"></div>
+  <main id="obsah"><p>Načítám…</p></main>
+  <noscript><p>Stránka potřebuje zapnutý JavaScript.</p></noscript>
+
+  <script src="web/sql-asm.js"></script>
+  <script src="web/app.js"></script>
+</body>
+</html>
